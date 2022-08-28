@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit&family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 18px;
+    background-color:  hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/* To delete if possible */
+ul{
+    list-style: none;
+}
+ul li, .buttons li{
+    display:inline;
+    position:relative;
+}
+ul a ,.buttons li a{
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    margin:10px;
+    transition: all 0.3s ;
+}
+
+/* To delete if possible ends */
+/** Navstyling  */
+.nav-bar {
+    margin-top:20px;
+display:flex;
+margin-bottom:15px;
+}
+.logo{
+margin-left:20px;
+margin-right:20px;
+}
+/*.nav-bar ul{
+    list-style: none;
+}
+.nav-bar ul li, .buttons li{
+    display:inline;
+    position:relative;
+}
+.nav-bar ul a, .buttons li a{
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    margin:10px;
+    transition: all 0.3s ;
+}*/
+
+.nav-bar ul li ul.drop-down li{
+    display: block;
+    margin:-5px 5px;
+}
+
+.nav-bar ul li ul.drop-down{
+    background-color:  white;
+    position:absolute;
+    width:100%;
+    z-index:999;
+    padding:10px;
+    /*margin-top:10px;
+    border-radius:15px;*/
+   display:none;
+}
+.nav-bar ul li ul.drop-down img{
+    margin-bottom:-20px;
+}
+.drop-down-1{
+    margin-left:110px;
+    margin-bottom:15px; 
+    padding:10px;
+}
+.nav-bar ul a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.nav-bar ul li:hover ul.drop-down{
+    display:block;
+    transition:4s;
+}
+/* Button Styling */
+.buttons{
+    margin-left:900px; 
+    margin-top:-18px;
+ }
+.buttons li a:hover{
+    color: hsl(0, 0%, 8%);
+}
+.btn{
+    border-radius:.4rem;
+    border:1px solid hsl(0, 0%, 41%);
+    padding: 7px 5px;
+}
+.btn:hover{
+    border:1px solid hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 8%)
+}
+/*Hero Styling */
+.hero{
+    display:flex;
+}
+.hide{
+    display:none;
+}
+.hero-text{
+    width:50%;
+    margin-left:40px;
+    margin-top:100px;  
+}
+.desktop-hero{
+    max-width:50%;
+    height:auto;
+    margin-left:200px;
+}
+.heading-text{
+    font-size:65px;
+    color:hsl(0, 0%, 8%);
+    text-align:left;
+}
+.small-text{
+color:hsl(0, 0%, 41%);
+margin-top:30px;
+margin-bottom: 40px;
+text-align:left;
+}
+.btn-learn{
+    background-color:hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 98%);
+    width:100%; 
+    border-radius:.4rem;
+   padding: 10px 15px;
+   /*margin-left:35px;*/  
+}
+.btn-learn:hover{
+    border-radius:.4rem;
+    border:1px solid hsl(0, 0%, 41%);
+    color: hsl(0, 0%, 8%);
+    background-color:hsl(0, 0%, 98%) ;   
+}
+.brands{
+    margin-top:-80px;
+}
+.brands img{
+    margin:10px;
+}
+.attribution { font-size: 11px;
+     text-align: center;
+     margin-top:100px; 
+}
+.attribution a { color: hsl(228, 45%, 44%);
+     }
+@media(max-width:  764px){
+    body{
+        font-weight:500;
+    }
+    ul li{
+        display:block;
+        margin-bottom:14px;
+        margin-left:5px;
+    }
+    .show{
+        display:none;
+    }
+        /* Nav Styling */
+.nav-bar{
+   display:flex; 
+   position:relative; 
+  }
+  .logo{
+     flex:1; 
+  }
+  .menu-wrapper{
+     position:relative;
+     flex:1;
+  }
+  .mobile-menu{
+      display:none; 
+     background-color: white;
+     position:absolute;
+     height:1000px;
+     padding:10px;
+  }
+  .menu-open, .menu-close{
+    text-align: right;    
+}
+.drop-down-mobile{
+    display:none; 
+}
+ul li:hover ul.drop-down-mobile{
+    display:block;
+    transition:4s;
+}
+.drop-down-mobile img{
+    margin-bottom:-20px;
+}
+/* buttons */
+.buttons{
+    margin-left:20px; 
+    margin-top:65px;
+
+}
+.btn{
+    border-radius:.9rem;
+    border:1px solid hsl(0, 0%, 41%);
+    padding: 10px 20px; 
+
+} 
+.hero{
+        flex-wrap:wrap;
+    }
+    .hide{
+        display:block;
+    }
+    .mobile-hero{
+        max-width:100%;
+        height:auto;
+    }
+    .hero-text{
+     margin-left:20px;
+     margin-top:20px;
+       
+    }
+    .heading-text{
+        font-size:30px;
+        width:300px;
+        margin-top:10px;
+        text-align:center;
+    }
+    .small-text{
+padding:10px;
+width:270px;
+    }
+    .btn-learn{
+margin-left:30px;
+    }
+    .brands{
+        display:flex;
+        margin-top:20px;
+    }
+    .brands img{
+      width:20%;  
+    }
+
+
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav-bar">
+  <div class="logo">
+   <img src="images/logo.svg" alt="Snap Logo">
+</div>
+<!--mobile nav-->
+<!--<div class="hide">-->
+  <div class="menu-wrapper hide">
+    <div class="menu-open" id ="open-menu"><a href=""><img src="images/icon-menu.svg" alt="icon-menu"></a></div>
+<div class="mobile-menu" id ="mobile-menu">
+  <ul>
+  <div class="menu-close" id ="close-menu"><a><img src="images/icon-close-menu.svg" alt="icon-close-menu"></a></div>
+    <li>
+      <a href="#">Features <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a>
+      <ul class="drop-down-mobile">
+        <img src="images/icon-todo.svg" alt="Todo Logo"><li><a href="#">Todo List</a></li>
+        <img src="images/icon-calendar.svg" alt="Calender Logo"> <li><a href="#">Calender</a></li>
+        <img src="images/icon-reminders.svg" alt=" Reminders Logo"><li><a href="#"> Reminders</a></li>
+        <img src="images/icon-planning.svg" alt="Planning Logo"> <li><a href="#">Planning</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Company <img src="images/icon-arrow-down.svg" alt="icon-arrow-down-1"></a> 
+      <ul class="drop-down-mobile">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#"> Blog</a></li>
+      </ul>
+  </li>
+    <li><a href="">Careers</a></li>
+    <li><a href="">About</a></li>
+  <div class="buttons">
+      <li><a href="#" class="login">Login</a></li>
+      <p style="opacity:0;"class="hide">Lorem ipsum</p>
+      <li><a href="#" class="btn">Register</a></li>
+    </div>
+  </ul> 
+</div>
+</div><!----Menu-warpper ends-->
+<!--</div>-mobilenav ends-->
+ <!--Desktop nav-->
+ <div class="show">
+<div class="menu">
+  <ul>
+    <li>
+      <a href="#">Features <img src="images/icon-arrow-down.svg" class="arrow-down"alt="icon-arrow-down"></a>
+      <ul class="drop-down">
+        <img src="images/icon-todo.svg" alt="Todo Logo"><li><a href="#">Todo List</a></li>
+        <img src="images/icon-calendar.svg" alt="Calender Logo"> <li><a href="#">Calender</a></li>
+        <img src="images/icon-reminders.svg" alt=" Reminders Logo"><li><a href="#"> Reminders</a></li>
+        <img src="images/icon-planning.svg" alt="Planning Logo"> <li><a href="#">Planning</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Company <img src="images/icon-arrow-down.svg" alt="icon-arrow-down"></a> 
+   <ul class="drop-down drop-down-1">
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#"> Blog</a></li>
+      </ul>
+    </li>
+    <li><a href="">Careers</a></li>
+    <li><a href="">About</a></li>
+  </div><!--menu ends here-->
+  <div class="buttons">
+      <li><a href="#">Login</a></li>
+      <li><a href="#" class="btn">Register</a></li></div>
+  </ul>
+</nav>
+</div><!--desktop nav ends-->
+<main>
+  <div class="hero">
+    <div class="hero-img"><img src="images/image-hero-mobile.png" class="mobile-hero hide" alt="Destop Hero"></div>
+    <div class="hero-text">
+      <h1 class="heading-text"> Make<br class="show"> remote work</h1>
+      <p class="small-text"> Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+        <a href="#" class="btn-learn">Learn more</a>
+    </div>
+    <div class="hero-img"><img src="images/image-hero-desktop.png" class="desktop-hero show" alt="Destop Hero"></div>
+  </div>
+</main>
+<footer class="brands">
+<img src="images/client-databiz.svg" alt="client-databiz">
+<img src="images/client-audiophile.svg" alt="client-audiophile">
+<img src="images/client-meet.svg" alt="client-meet">
+<img src="images/client-maker.svg" alt="client-maker">
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://salamah.netlify.app">Salamah</a>.
+</div>
+</footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
